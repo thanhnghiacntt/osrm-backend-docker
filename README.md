@@ -7,16 +7,12 @@ Mã nguồn mở từ (OSRMS)Docker Image [\[Docker Hub\]](https://hub.docker.co
 1. Cài đặt docker trước tham khảo[Docker](https://www.docker.com/)
 
 2. Cài đặt (optional).
-
-  Pull automated build from Docker Hub:
-  ```
-  $ docker pull thanhnghiacntt/osrm-backend-docker
-  ```
-  or build from GitHub:
+  
+  build từ GitHub:
   ```
   $ docker build -t="osrm-backend-docker" github.com/thanhnghiacntt/osrm-backend-docker
   ```
-  or you can clone & build:  
+  Hoặc có thể clone & build:  
   ```
   $ git clone https://github.com/thanhnghiacntt/osrm-backend-docker.git  
   $ docker build -t="osrm-backend-docker" osrm-backend-docker/
