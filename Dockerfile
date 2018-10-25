@@ -6,23 +6,10 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install necessary packages for proper system state
 RUN apt-get -y update && apt-get install -y \
-    build-essential \
-    cmake \
-    curl \
-    git \
-    libboost-all-dev \
-    libbz2-dev \
-    libstxxl-dev \
-    libstxxl-doc \
-    libstxxl1 \
-    libtbb-dev \
-    libxml2-dev \
-    libzip-dev \
-    lua5.2 \
-    liblua5.2-dev \
-    libluabind-dev \
-    libluajit-5.1-dev \
-    pkg-config
+    install build-essential git cmake pkg-config \
+	libbz2-dev libstxxl-dev libstxxl1v5 libxml2-dev \
+	libzip-dev libboost-all-dev lua5.2 liblua5.2-dev libtbb-dev \
+	libluabind-dev libluabind0.9.1v5 
 
 RUN mkdir -p /osrm-build \
  && mkdir -p /osrm-data
