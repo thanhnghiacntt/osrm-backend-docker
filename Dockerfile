@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER Alex Newman <alex@newman.pro>
+MAINTAINER Alex Newman <thanhnghiacntt@gmail.com>
 
 # Let the container know that there is no TTY
 ENV DEBIAN_FRONTEND noninteractive
